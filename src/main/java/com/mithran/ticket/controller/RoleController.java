@@ -3,7 +3,7 @@ package com.mithran.ticket.controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.mithran.ticket.dto.RoleDto;
+import com.mithran.ticket.dto.RoleDTO;
 import com.mithran.ticket.entity.Role;
 import com.mithran.ticket.service.RoleService;
 
@@ -20,7 +20,7 @@ public class RoleController {
     private RoleService roleService;
 
     @PostMapping("/create")
-    public Role createNewRole(@RequestBody RoleDto role) {
+    public Role createNewRole(@RequestBody RoleDTO role) {
 
         return roleService.createNewRole(role);
     }
