@@ -9,6 +9,4 @@ import com.mithran.ticket.entity.User;
 public interface UserRepository extends JpaRepository<User,String> {
 
     
-
-    
 }

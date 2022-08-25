@@ -7,5 +7,7 @@ public interface UserService {
 
     public User registerNewUser(User user);
     public String getEncodedPassword(String password);
+    public long getUserCount();
+
     
 }

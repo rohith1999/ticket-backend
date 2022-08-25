@@ -41,6 +41,13 @@ public class UserServiceImpl implements UserService{
         return passwordEncoder.encode(password);
     }
 
+    @Override
+    public long getUserCount() {
+        return userRepository.count();
+    }
+
+    
+
 
     
 
